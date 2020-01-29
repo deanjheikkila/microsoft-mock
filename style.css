@@ -1,0 +1,103 @@
+body {
+    font-family: Verdana;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    width: 90%;
+    height: 20px;
+}
+main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(59, 59, 150);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a:hover {
+    border-bottom: 2px solid rgb(59, 59, 150);
+}
+button {
+    padding: 20px;
+    background: black;
+}
+button a {
+    color: white;
+}
+button a:hover {
+    border-bottom: 2px solid white;
+}
+.mini {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    
+}
+ul, li {
+    display: inline;
+
+}
+
+header a {
+    color: gray;
+    text-transform: none;
+    font-weight: normal;
+}
+header a:hover {
+    border-bottom: 2px solid gray;
+}
+header img {
+    height: 30px;
+}
+#banner1 img {
+    width: 50%;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.mini img {
+    width: 200px;
+}
+.banner {
+    width: 90%;
+    height: 350px;
+}
+.section {
+    width: 200px;
+
+}
+#banner1 {
+    text-align: center;
+    background-color: rgb(199, 199, 199);
+    height: 400px;
+    margin-top: 100px;
+}
+#banner2 {
+    background: url(img/banner2.png);
+    background-size: cover;
+}
+#banner3 {
+    height: 400px;
+    padding-top: 200px;
+    padding-right: 10px;
+    background: url(img/banner3.png);
+    background-size: cover;
+    color: white;
+    text-align: right;
+}
+#banner3 a {
+    color: white;
+}
+#banner3 a:hover {
+    border-bottom: white;
+}
