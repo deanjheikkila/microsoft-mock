@@ -1,19 +1,58 @@
 body {
     font-family: Verdana;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-header {
-    width: 90%;
-    height: 20px;
+    margin: 0 auto;
+    text-align: center;
 }
 main {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
 }
-
+.row {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+header {
+    flex-direction: row;
+    align-items: center;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.emptycol {
+    width: 340px;
+}
+.icons img {
+    height: 40px;
+    width: 40px;
+}
+.banner {
+    height: 432px;
+}
+.empty {
+    height: 40px;
+}
+.thumbnails {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+.thumbnails img {
+    width: 278px;
+    margin-bottom: 20px;
+}
+section {
+    width: 278px;
+    text-align: left;
+}
+footer {
+    justify-content: space-around;
+    color: gray;
+    background: rgb(199, 198, 198);
+    flex-direction: row;
+    display: flex;
+}
 a {
     text-decoration: none;
     color: rgb(59, 59, 150);
@@ -33,63 +72,39 @@ button a {
 button a:hover {
     border-bottom: 2px solid white;
 }
-.mini {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-
-    
-}
-ul, li {
+li {
     display: inline;
-
+    padding: 10px;
 }
-
+ul {
+    list-style: none;
+    padding: 10px;
+}
 header a {
-    color: gray;
+    color: black;
     text-transform: none;
     font-weight: normal;
 }
 header a:hover {
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid black;
 }
-header img {
-    height: 30px;
-}
-#banner1 img {
-    width: 50%;
-}
-.left {
-    float: left;
-}
-.right {
-    float: right;
-}
-.mini img {
-    width: 200px;
-}
-.banner {
-    width: 90%;
-    height: 350px;
-}
-.section {
-    width: 200px;
-
+header img { /* Microsoft Logo and icons */
+    height: 50px;
+    padding: 10px;
 }
 #banner1 {
-    text-align: center;
+    text-align: right;
     background-color: rgb(199, 199, 199);
-    height: 400px;
-    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 #banner2 {
     background: url(img/banner2.png);
     background-size: cover;
 }
 #banner3 {
-    height: 400px;
-    padding-top: 200px;
-    padding-right: 10px;
+    display: block;
     background: url(img/banner3.png);
     background-size: cover;
     color: white;
@@ -100,4 +115,30 @@ header img {
 }
 #banner3 a:hover {
     border-bottom: white;
+}
+.bannertext{
+    width: 432px;
+    float: right;
+    padding-top: 186px;
+    padding-right: 75px;
+}
+.follow {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+.followtext {
+    align-items: center;
+    width: 149px;
+    display: flex;
+    padding-left: 10px;
+    color: slategray;
+}
+.clock img {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+}
+.clocktext {
+    padding-right: 10px;
 }

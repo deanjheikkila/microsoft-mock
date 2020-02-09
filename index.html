@@ -9,9 +9,10 @@
 <body>
     <main>
         <header>
-            <div class="left">
+            <div class="logo">
                 <img src="img/microsoft.png" alt="microsoft logo">
-        
+            </div>
+            <div class="nav">
                 <ul>
                     <li><a href="#">Office</a></li>
                     <li><a href="#">Windows</a></li>
@@ -21,20 +22,31 @@
                     <li><a href="#">Support</a></li>
                 </ul>
             </div>
-            <div class="right"> 
-                <a href="#">All Microsoft</a></p>
+            <div class="emptycol">
+            </div>
+            <div class="hamburger"> 
+                <a href="#">All Microsoft</a>
+            </div>
+            <div class="icons">
                 <a href="#"><img src="img/icon1.png"></a>
                 <a href="#"><img src="img/icon2.png"></a>
                 <a href="#"><img src="img/icon3.png"></a>
             </div> 
         </header>
-<div class="banner" id="banner1">
-    <img src="img/banner1.png">
-    <h1>Surface deals</h1>
-    <p>Select Surface are on sale now--save while supplies last</p>
-    <button><a href="#">SHOP NOW ></a></button>
+<div class="banner row" id="banner1">
+    <div class="clock">
+        <img id="face" src="js-clock-intervals2/img/clockface.png">
+        <img id="hour" src="js-clock-intervals2/img/hour-hand.png">
+        <img id="minute" src="js-clock-intervals2/img/minute-hand.png">
+        <img id="second" src="js-clock-intervals2/img/second-hand.png">
+    </div>
+    <div class="clocktext">
+        <h1>Microsoft Clock</h1>
+        <p>View the current time with our fancy clock</p>
+    </div>
 </div>
-<div class="mini">
+<div class="empty row"></div>
+<div class="thumbnails row">
     <section>
         <img src="img/section1.png">
         <h2>New Surface Pro 7</h2>
@@ -62,7 +74,8 @@
         <a href="#">FIND YOUR NEXT PC</a>
     </section>
 </div>
-<div class="banner" id="banner2">
+<div class="empty row"></div>
+<div class="banner row" id="banner2">
     <!-- <img src="img/banner2.png"> -->
     <h1>Xbox Game Pass Ultimate</h1>
     <p>Xbox LIve Gold and over 100 high-quality console and PC games.<br />
@@ -70,7 +83,8 @@
     </p>
     <button><a href="#">JOIN NOW</a></button>
 </div>
-<div class="mini">
+<div class="empty row"></div>
+<div class="thumbnails row">
     <section>
         <img src="img/section5.png">
         <h2>Microsoft Teams</h2>
@@ -98,17 +112,38 @@
         <a href="#">GET STARTED</a>
     </section>
 </div>
-<div class="banner" id="banner3">
+<div class="empty row"></div>
+<div class="banner row" id="banner3">
     <!-- <img src="img/banner3.png"> -->
-    <h1>Double Your Gift</h1>
-    <p>We're proud to match your donation of $5 or more to American 
-        Red Cross Disaster Relief and will match up to $50,000 in customer 
-        donations until Jan 31, 2020
-    </p>
-    <button><a href="#">LEARN MORE</a></button>
-    <a href="#">DONATE NOW</a>
+    <div class="bannertext">
+        <h1>Double Your Gift</h1>
+        <p>We're proud to match your donation of $5 or more to American 
+            Red Cross Disaster Relief and will match up to $50,000 in customer 
+            donations until Jan 31, 2020
+        </p>
+        <button><a href="#">LEARN MORE</a></button>
+        <a href="#">DONATE NOW</a>
+    </div>
+</div>
+<div class="empty row"></div>
+<div class="follow row">
+    <div class="followtext">
+        Follow Microsoft 
+    </div>
+    <div class="icons">
+        <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+        <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+        <a href="#"><img src="img/linkedin.png" alt="linkedin"></a>
+    </div>
 </div>
 </main>
-
-
+<footer>
+    <h6>What's New</h6>
+    <h6>Microsoft Store</h6>
+    <h6>Education</h6>
+    <h6>Enterprise</h6>
+    <h6>Developer</h6>
+    <h6>Company</h6>
+</footer>
+<script src="js-clock-intervals2/clock.js"></script>
 </body>
