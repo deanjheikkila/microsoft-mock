@@ -94,7 +94,7 @@ header img { /* Microsoft Logo and icons */
 }
 #banner1 {
     text-align: right;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(211, 208, 208);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -102,6 +102,8 @@ header img { /* Microsoft Logo and icons */
 #banner2 {
     background: url(img/banner2.png);
     background-size: cover;
+    display: flex;
+    flex-direction: row;
 }
 #banner3 {
     display: block;
@@ -109,6 +111,7 @@ header img { /* Microsoft Logo and icons */
     background-size: cover;
     color: white;
     text-align: right;
+    padding-top: 0;
 }
 #banner3 a {
     color: white;
@@ -119,8 +122,8 @@ header img { /* Microsoft Logo and icons */
 .bannertext{
     width: 432px;
     float: right;
-    padding-top: 186px;
     padding-right: 75px;
+    padding-top: 185px;
 }
 .follow {
     display: flex;
@@ -141,4 +144,54 @@ header img { /* Microsoft Logo and icons */
 }
 .clocktext {
     padding-right: 10px;
+}
+.pic {
+    color: white;
+    height: 278px;
+    width: 278px;
+    display: inline-block; 
+    line-height: 225px; 
+    vertical-align: middle;
+    text-align: center;
+}
+.pic1 {
+    background: url(css-airbnb2/img/san-francisco.jpg) center;
+}
+.pic2 {
+    background: url(css-airbnb2/img/new-york.jpg) center;
+}
+.pic3 {
+    background: url(css-airbnb2/img/london.jpg) center;
+}
+.pic4 {
+    background: url(css-airbnb2/img/napa.jpg) center;
+}
+.tallerempty {
+    height: 80px;
+}
+.reddittext {
+    text-align: left;
+    padding-left: 54px;
+    padding-top: 116px;
+    width: 432px;
+}
+#reset {
+    width: 128px;
+    font-size: 16px;
+    color: white;
+}
+.redditslideshow {
+    vertical-align: middle;
+}
+#reset {
+    display:none;
+}
+#text-box {
+    width: 266px;
+}
+#reddit-results {
+    width: 200px;
+    height: 200px;
+    padding-right: 100px;
+    padding-top: 100px;
 }

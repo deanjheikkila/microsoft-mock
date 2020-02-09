@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="ajax-reddit-slideshow2/js/app.js"></script>  
 </head>
 <body>
     <main>
@@ -48,40 +52,42 @@
 <div class="empty row"></div>
 <div class="thumbnails row">
     <section>
-        <img src="img/section1.png">
-        <h2>New Surface Pro 7</h2>
-        <p>See how Katie Sowers, Asst. Coach for the 49ers, uses Surface Pro 7 to put her plans into play.
-        </p>
-        <a href="#">LEARN MORE</a>
+        <div class="pic pic1"><h2>San Francisco</h2></div>
+        <h2>Meet Guidebooks</h2>
+        <p>Discover hundreds of local spots recommended by Airbnb hosts.</p>
+        <a href="#">SEE GUIDEBOOKS</a>
     </section>
     <section>
-        <img src="img/section2.png">
-        <h2>New Surface Laptop 3</h2>
-        <p>Express yourself powerfully with a thin, light, and elegant design, faster performance, and up to 11.5 hours battery life.</p>
-        <a href="#">SHOP NOW</a>
+        <div class="pic pic2"><h2>New York</h2></div>
+        <h2>Just for the weekend</h2>
+        <p>Discover new, inspiring places close to home.</p>
+        <a href="#">SEE ALL DESTINATIONS</a>
     </section>
     <section>
-        <img src="img/section3.png">
-        <h2>Save $150 + free controller</h2>
-        <p>Buy an Xbox One X console and double your fun with a free select extra controller. Starting at $349.</p>
-        <a href="#">SHOP NOW</a>
+        <div class="pic pic3"><h2>London</h2></div>
+        <h2>Meet Guidebooks</h2>
+        <p>Discover hundreds of local spots recommended by Airbnb hosts.</p>
+        <a href="#">SEE GUIDEBOOKS</a>
     </section>
     <section>
-        <img src="img/section4.png">
-        <h2>Do more with Windows</h2>
-        <p>Shop tablets, laptops, all-in-ones, gaming PCs, and more.
-        </p>
-        <a href="#">FIND YOUR NEXT PC</a>
+        <div class="pic pic4"><h1>Napa</h1></div>
+        <h2>Just for the weekend</h2>
+        <p>Discover new, inspiring places close to home.</p>
+        <a href="#">SEE ALL DESTINATIONS</a>
     </section>
 </div>
-<div class="empty row"></div>
+<div class="empty row tallerempty"></div>
 <div class="banner row" id="banner2">
-    <!-- <img src="img/banner2.png"> -->
-    <h1>Xbox Game Pass Ultimate</h1>
-    <p>Xbox LIve Gold and over 100 high-quality console and PC games.<br />
-        Play togehter with friends and discover your next favorite game.
-    </p>
-    <button><a href="#">JOIN NOW</a></button>
+    <div class="reddittext">
+        <h1>Pictures from Reddit</h1>
+        <form>
+            <input type="text" name="textBox" id="text-box" placeholder="enter your search here">
+            <input type="submit" value="Go">
+        </form>
+        <button id="reset">RESET</button>
+    </div>
+    <div id="reddit-results">
+    </div>
 </div>
 <div class="empty row"></div>
 <div class="thumbnails row">
@@ -136,6 +142,7 @@
         <a href="#"><img src="img/linkedin.png" alt="linkedin"></a>
     </div>
 </div>
+<div class="empty row"></div>
 </main>
 <footer>
     <h6>What's New</h6>
